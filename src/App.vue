@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="appContainer">
     <HeaderComponent></HeaderComponent>
     <router-view></router-view>
   </div>
@@ -47,7 +47,7 @@ export default {
   --roboto-regular: "Roboto Regular";
 }
 
-.container {
+.appContainer {
   width: 100vw;
   min-height: 100vh;
   background-color: #000;

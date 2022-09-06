@@ -1,5 +1,5 @@
 <template>
-  <div class="headerContainer">
+  <div class="container">
     <h1 class="title">Star<br />Wars</h1>
     <h1 class="subtitle">Casting</h1>
     <HeaderPageButton
@@ -62,7 +62,7 @@ export default {
   color: var(--yellow);
 }
 
-.headerContainer {
+.container {
   display: flex;
   align-items: center;
   justify-content: start;

@@ -1,5 +1,5 @@
 <template>
-  <button class="buttonContainer">
+  <button class="button">
     <span>{{ label }}</span>
   </button>
 </template>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.buttonContainer {
+.button {
   height: 42px;
   padding-left: 17px;
   padding-right: 17px;
@@ -29,7 +29,7 @@ export default {
   cursor: pointer;
 }
 
-.buttonContainer:hover {
+.button:hover {
   background-color: var(--light-gray);
 }
 </style>
