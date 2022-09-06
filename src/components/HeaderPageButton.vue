@@ -1,5 +1,5 @@
 <template>
-  <button class="pageButton" :class="{ selected }">
+  <button class="pageButton" :class="{ selected }" @click="onClick">
     <span>{{ label }}</span>
   </button>
 </template>
@@ -15,9 +15,18 @@ export default {
     path: {
       type: String, 
       default: ""
-    },
-    selected: Boolean,
+    }
   },
+  methods: {
+    onClick() {
+      this.$router.push(this.path);
+    }
+  },
+  computed: {
+    selected() {
+      return this.$router.currentRoute.value.path === this.path;
+    }
+  }
 };
 </script>
 
