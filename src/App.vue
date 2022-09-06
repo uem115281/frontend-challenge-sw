@@ -39,7 +39,8 @@ export default {
 
 :root {
   --yellow: #ffe81f;
-  --light-gray: #303030;
+  --gray: #303030;
+  --light-gray: #606060;
   --white: #fafafa;
   --dark: #0f0f0f;
   --star-jedi: "Star Jedi Regular";
