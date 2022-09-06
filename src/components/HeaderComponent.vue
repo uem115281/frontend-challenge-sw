@@ -8,7 +8,7 @@
       class="buttonPersonagens"
     />
     <HeaderPageButton label="FiLMES" path="/filmes" class="buttonFilmes" />
-    <MyButton label="Cadastrar-se" class="buttonCadastrar" />
+    <MyButton label="Cadastrar-se" class="buttonCadastrar" @click="onClickCadastroHandle" />
   </div>
 </template>
 
@@ -22,6 +22,11 @@ export default {
     HeaderPageButton,
     MyButton,
   },
+  methods: {
+    onClickCadastroHandle() {
+      this.$router.push('/cadastro');
+    }
+  }
 };
 </script>
 
