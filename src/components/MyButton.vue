@@ -30,6 +30,6 @@ export default {
 }
 
 .button:hover {
-  background-color: var(--light-gray);
+  background-color: var(--gray);
 }
 </style>
