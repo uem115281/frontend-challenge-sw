@@ -3,12 +3,12 @@
     <h1 class="title">Star<br />Wars</h1>
     <h1 class="subtitle">Casting</h1>
     <HeaderPageButton
-      label="personagens"
+      label="PERSoNAGENS"
       path="/personagens"
       class="buttonPersonagens"
       selected
     />
-    <HeaderPageButton label="filmes" path="/filmes" class="buttonFilmes" />
+    <HeaderPageButton label="FiLMES" path="/filmes" class="buttonFilmes" />
     <MyButton label="Cadastrar-se" class="buttonCadastrar" />
   </div>
 </template>
