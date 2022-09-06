@@ -27,6 +27,7 @@ export default {
   font-size: 16px;
   font-family: var(--star-jedi);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .selected, .pageButton:hover {
