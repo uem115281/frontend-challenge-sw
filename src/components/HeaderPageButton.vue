@@ -8,8 +8,14 @@
 export default {
   name: "HeaderPageButton",
   props: {
-    label: "",
-    path: "",
+    label: {
+      type: String, 
+      default: ""
+    },
+    path: {
+      type: String, 
+      default: ""
+    },
     selected: Boolean,
   },
 };

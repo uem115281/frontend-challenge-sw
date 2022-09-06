@@ -8,7 +8,10 @@
 export default {
   name: "MyButton",
   props: {
-    label: "",
+    label: {
+      type: String, 
+      default: ""
+    }
   },
 };
 </script>
