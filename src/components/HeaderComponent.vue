@@ -68,7 +68,7 @@ export default {
   justify-content: start;
   padding: 0px 100px 0px 100px;
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   height: 100px;
   background-color: var(--dark);
 }
