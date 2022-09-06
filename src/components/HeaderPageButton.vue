@@ -46,6 +46,6 @@ export default {
 }
 
 .selected, .pageButton:hover {
-  background-color: var(--light-gray);
+  background-color: var(--gray);
 }
 </style>
