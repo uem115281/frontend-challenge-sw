@@ -6,7 +6,7 @@
       label="PERSoNAGENS"
       path="/personagens"
       class="buttonPersonagens"
-      selected
+      :selected="true"
     />
     <HeaderPageButton label="FiLMES" path="/filmes" class="buttonFilmes" />
     <MyButton label="Cadastrar-se" class="buttonCadastrar" />
