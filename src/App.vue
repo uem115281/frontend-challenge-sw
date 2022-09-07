@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="appContainer">
     <HeaderComponent></HeaderComponent>
     <router-view></router-view>
   </div>
@@ -39,7 +39,8 @@ export default {
 
 :root {
   --yellow: #ffe81f;
-  --light-gray: #303030;
+  --gray: #303030;
+  --light-gray: #606060;
   --white: #fafafa;
   --dark: #0f0f0f;
   --star-jedi: "Star Jedi Regular";
@@ -47,8 +48,7 @@ export default {
   --roboto-regular: "Roboto Regular";
 }
 
-.container {
-  width: 100vw;
+.appContainer {
   min-height: 100vh;
   background-color: #000;
 }
