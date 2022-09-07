@@ -1,7 +1,7 @@
 <template>
   <div class="containerListaPersonagens">
     <h1>Personagens</h1>
-    <TextInput
+    <SearchTextInput
       placeholder="FILTRE POR NOME DO PERSONAGEM"
       class="inputCadastro"
     />
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import TextInput from "@/components/TextInput.vue";
+import SearchTextInput from "@/components/SearchTextInput.vue";
 import PersonagemCard from "@/components/PersonagemCard.vue";
 import SelectPage from "@/components/SelectPage.vue";
 
@@ -35,7 +35,7 @@ export default {
     }
   },
   components: {
-    TextInput,
+    SearchTextInput,
     PersonagemCard,
     SelectPage,
   },
