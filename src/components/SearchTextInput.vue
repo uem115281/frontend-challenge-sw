@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "TextInput",
+  name: "SearchTextInput",
   props: {
     value: {
       type: String,
@@ -43,7 +43,8 @@ export default {
   fill: var(--white);
   width: 17.5px;
   height: 17.5px;
-  margin-right: calc(-17.5px - 15px);
+  margin-right: -32.5px;
+  margin-left: 16.25px;
   z-index: 2000;
 }
 
