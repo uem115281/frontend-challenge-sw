@@ -17,7 +17,7 @@
       :key="p"
       @click="$emit('changePage', p)"
     >
-      {{ p }}
+      {{ p+1 }}
     </div>
     <div
       class="arrowButton right"
