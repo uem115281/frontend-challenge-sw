@@ -72,7 +72,7 @@ export default {
   padding-bottom: 86px;
 }
 
-.container h1 {
+.containerListaFilmes h1 {
   font-family: var(--star-jedi);
   color: var(--yellow);
   height: 64px;
