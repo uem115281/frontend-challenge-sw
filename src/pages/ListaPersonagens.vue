@@ -1,36 +1,57 @@
 <template>
-  <div class="container">
+  <div class="containerListaPersonagens">
     <h1>Personagens</h1>
     <TextInput
       placeholder="FILTRE POR NOME DO PERSONAGEM"
       class="inputCadastro"
     />
     <div class="personagensList">
-      <PersonagemCard v-for="personagem in personagens" :key="personagem.url" :personagem="personagem" />
+      <PersonagemCard
+        v-for="personagem in personagens"
+        :key="personagem.url"
+        :personagem="personagem"
+      />
     </div>
+    <SelectPage class="pageSelector" :page="page" :totalPages="10" @changePage="changePageHandler" />
   </div>
 </template>
 
 <script>
 import TextInput from "@/components/TextInput.vue";
 import PersonagemCard from "@/components/PersonagemCard.vue";
+import SelectPage from "@/components/SelectPage.vue";
 
 export default {
   name: "ListaPersonagens",
   props: {},
+  data: function() {
+    return {
+      page: 0
+    }
+  },
+  methods: {
+    changePageHandler(p) {
+      this.page = p;
+    }
+  },
   components: {
     TextInput,
-    PersonagemCard
-},
+    PersonagemCard,
+    SelectPage,
+  },
   computed: {
     personagens() {
       return new Array(20).fill({});
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
+.pageSelector {
+  margin-top: 33px;
+}
+
 .personagensList {
   display: grid;
   grid-template-columns: 273px 273px 273px 273px;
@@ -43,11 +64,12 @@ export default {
   margin-top: 50px;
 }
 
-.container {
+.containerListaPersonagens {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  padding-bottom: 86px;
 }
 
 .container h1 {
