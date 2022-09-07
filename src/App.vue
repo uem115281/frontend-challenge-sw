@@ -37,15 +37,22 @@ export default {
   src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto Light";
+  src: url("./assets/fonts/Roboto-Light.ttf") format("truetype");
+}
+
 :root {
   --yellow: #ffe81f;
   --gray: #303030;
+  --light-gray-2: #3E3E3E;
   --light-gray: #606060;
   --white: #fafafa;
   --dark: #0f0f0f;
   --star-jedi: "Star Jedi Regular";
   --roboto-medium: "Roboto Medium";
   --roboto-regular: "Roboto Regular";
+  --roboto-light: "Roboto Light";
 }
 
 .appContainer {
