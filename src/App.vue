@@ -20,6 +20,7 @@ export default {
 * {
   padding: 0px;
   margin: 0px;
+  user-select: none;
 }
 
 @font-face {
